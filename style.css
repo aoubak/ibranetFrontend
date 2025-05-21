@@ -22,6 +22,7 @@
     --high-gray: #e5e8eb;
 
     --border: #2c3e505f;
+    --border-bg: #2c3e5027;
 }
 
 body {
@@ -118,21 +119,29 @@ nav ul li a:hover {
             rgba(0, 0, 0, 0.8)), url(images/Hero\ Background.jpg);
     background-size: cover;
     height: 80vh;
+    /* padding-top: 6rem; */
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: left;    
 }
 
 .hero-content {
-
-    margin-left: 10%;
+    margin-left: 5rem;
+    margin-right: 5rem;
     color: white;
-    padding-top: 17%;
+
 }
 
 .hero-content h1 {
-    font-size: 50px;
+    font-size: 4rem;
+    line-height: 1;
+    margin-bottom: 1rem;
 }
 
 .hero-content p {
-    font-size: 15px;
+    margin-bottom: 1rem;
+    font-size: 1rem;
 }
 
 .btn {
@@ -140,13 +149,14 @@ nav ul li a:hover {
     color: white;
     padding: 10px 20px;
     border: none;
+    outline: none;
     border-radius: 5px;
     cursor: pointer;
 }
 
 .btn:hover {
-    background-color: #5bb1ea;
-    border: 2px solid #f0f0f0;
+    background-color: var(--text-color);
+    transition: background-color 0.3s ease;
 }
 
 /* Features style */
@@ -195,14 +205,15 @@ nav ul li a:hover {
     .hero-content {
         /* padding-top: 20%; */
         margin-left: 3%;
-        text-align: center;
+        text-align: left;
     }
 
     .hero-content p {
         font-size: 20px;
         margin-bottom: 1rem;
-        text-align: center;
+        text-align: left;
     }
+
     .hero-content h1 {
         font-size: 45px;
         line-height: 1;
@@ -210,14 +221,45 @@ nav ul li a:hover {
     }
 
     .features {
-        flex-direction: column;
+        flex-direction: row;
         align-items: center;
         padding: 0rem 1rem;
     }
 
     .feature {
+        display: flex;
+        justify-content: start;
+        gap: 1rem;
         width: 100%;
         margin: 10px 0;
+    }
+
+    .feature i {
+        font-size: 20px;
+        color: var(--text-color);
+        border: 1px solid var(--border);
+        background: var(--border-bg);
+        padding: 10px;
+        border-radius: 5px;
+    }
+
+    .feature .content {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        border-left: 1px solid var(--border);
+        padding-left: 1rem;
+
+    }
+
+    .feature .content h3 {
+        font-size: 20px;
+        color: var(--text-color);
+    }
+
+    .feature .content p {
+        font-size: 15px;
+        color: var(--low-gray);
     }
 
 
@@ -366,7 +408,7 @@ nav ul li a:hover {
 
     nav ul {
         position: absolute;
-        top: 5rem;
+        top: 6rem;
         left: 0;
         padding: .5rem;
         display: flex;
