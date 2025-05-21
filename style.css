@@ -27,6 +27,119 @@ body{
     background-color: var(--high-gray);
     color: var(--text-color);
 }
+/* Navbar style  */
+nav{
+    background-color: #fcfafa;
+    color: white;
+    padding: 20px;
+}
+nav ul{
+    list-style-type: none;
+    text-align: center;
+}
+nav ul li{
+    display: inline;
+    margin-right: 20px;
+}
+nav ul li a{
+    color: #000;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight:500;
+}
+nav ul li a:hover{
+    border-bottom: #3498db 2px solid;
+}
+/* Hero style */
+.hero{
+    margin: 0;
+    background: linear-gradient(rgba(0,0,0,0.6),
+    rgba(0,0,0,0.8)), url(images/Hero\ Background.jpg);
+    background-size: cover;
+    height: 80vh;
+}
+.hero-content{
+
+    margin-left: 10%;
+    color: white;
+    padding-top: 17%;
+}
+.hero-content h1{
+    font-size: 50px;
+}
+.hero-content p{
+    font-size: 15px;
+}
+.btn{
+    background-color: #3498db;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.btn:hover{
+    background-color: #5bb1ea;
+    border: 2px solid #f0f0f0;
+}
+
+/* Features style */
+.features{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin: 50px 0;
+}
+.feature{
+    background-color: #f0f0f0;
+    text-align: center;
+    font-size: small;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 10px;
+    width: 20% ;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    color: #2a2a2abc;
+
+}
+.feature i{
+    font-size: medium;
+}
+span{
+    color: #2ecc71;
+    font-weight: bold;
+
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+    .hero {
+        height: 60vh;
+    }
+    .hero-content {
+        padding-top: 20%;
+        margin-left: 3%;
+        text-align: center;
+    }
+    .hero-content h1 {
+        font-size: 28px;
+    }
+    .features {
+        flex-direction: column;
+        align-items: center;
+    }
+    .feature {
+        width: 80%;
+        margin: 10px 0;
+    }
+    
+    
+}
+
 
 section{
     margin: 2rem 0;
@@ -148,8 +261,20 @@ section{
         padding: 0rem 1rem;
         flex-direction: column;
         align-items: center;
+        margin-left: 0rem;
+        margin-right: 0rem; 
      }
     .product_cards .card{
+        width: 100%;
+        margin: 1rem 0rem;
+    }
+    
+    .news{
+        padding: 0rem 1rem;
+        margin-left: 0rem;
+        margin-right: 0rem; 
+     }
+    .news .news_card{
         width: 100%;
         margin: 1rem 0rem;
     }
