@@ -144,12 +144,29 @@ section{
 
 /* mobile screens */
 @media (max-width: 475px) {
+    .page_header h1{
+        font-size: 1.5rem;
+    }
      .product_cards{
         padding: 0rem 1rem;
         flex-direction: column;
         align-items: center;
+        width: 100%;
+        margin: 0rem;
      }
     .product_cards .card{
+
+        width: 100%;
+        margin: 1rem 0rem;
+    }
+    .news{
+        padding: 0rem 1rem;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        margin: 0rem;
+    }
+    .news .news_card{
         width: 100%;
         margin: 1rem 0rem;
     }
