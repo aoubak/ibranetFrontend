@@ -209,15 +209,15 @@ nav ul li a:hover {
     }
 
     .hero-content p {
-        font-size: 20px;
-        margin-bottom: 1rem;
+        font-size: 15px;
+        margin-bottom: .5rem;
         text-align: left;
     }
 
     .hero-content h1 {
-        font-size: 45px;
+        font-size: 35px;
         line-height: 1;
-        margin-bottom: 1rem;
+        margin-bottom: .5rem;
     }
 
     .features {
