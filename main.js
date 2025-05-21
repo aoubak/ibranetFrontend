@@ -1,3 +1,13 @@
+// menu toggale
+
+const menuToggle = document.querySelector(".menu-toggle");
+const menu = document.querySelector(".menu");
+
+menuToggle.addEventListener("click", () => {
+    menu.classList.toggle("active");
+    // menuToggle.classList.toggle("active");
+});
+
 
 // getting elements form index.html
 const product_cards = document.querySelectorAll(".product_cards");
@@ -11,7 +21,7 @@ async function fetchProducts() {
 
         products.forEach((product, index) => {
 
-            
+
 
 
         });
@@ -24,3 +34,5 @@ async function fetchProducts() {
 }
 
 fetchProducts();
+
+
