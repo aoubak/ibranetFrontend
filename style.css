@@ -471,11 +471,13 @@ nav ul li a:hover {
     background: var(--danger-color);
 }
 
-.product_cards .card:hover {
-    transform: scale(1.05);
+.product_cards .card img:hover {
+    transition: transform 0.3s ease-in-out;
+    transform: scale(1.2);
 }
 
 .product_cards .card img {
+    transition: transform 0.3s ease-in-out;
     width: 100%;
     height: auto;
     border-radius: 10px;

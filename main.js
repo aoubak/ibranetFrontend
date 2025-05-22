@@ -19,7 +19,7 @@ async function fetchProducts() {
         console.log(products);
 
 
-        products.slice(0, 3).forEach(product => {
+        products.slice(0, 9).forEach(product => {
             const product_card = document.createElement("div");
             product_card.classList.add("card");
             product_card.innerHTML = `
@@ -31,7 +31,7 @@ async function fetchProducts() {
                           </span>
                         <img src="${product.thumbnail}" alt="Product 1">
                         <h3>${product.title}</h3>
-                        <p class="description">${product.description.slice(0, 50) + " ..."}</p>
+                        <p class="description">${product.description.slice(0, 70) + " ..."}</p>
                         <div class="stars_price">
                             <div class="price">
                                 <span>
