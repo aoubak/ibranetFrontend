@@ -227,7 +227,7 @@ nav ul li a:hover {
     }
 
     .products .product_cards {
-        margin: 0 1rem;
+        margin: 0 0rem;
         gap: 1rem;
         justify-content: center;
     }
@@ -663,16 +663,20 @@ footer {
 
 /* Responsive tweaks */
 @media (max-width: 600px) {
+    .newsletter {
+        text-align: left;
+    }   
     .subscribe-form {
         display: flex;
-        flex-direction: column;
-        align-items: center;
+        gap: 10px;
     }
 
-    .subscribe-form input,
+    .subscribe-form input{
+        border-radius: 5px;
+    }
     .subscribe-form button {
-        width: 90%;
-        margin-bottom: 10px;
+        /* margin-bottom: 10px; */
+        border-radius: 5px;
     }
 }
 
@@ -685,6 +689,13 @@ footer {
 
 /* mobile screens */
 @media (max-width: 475px) {
+    section{
+        margin: 2rem 0rem;
+    }
+    .page_header h1 {
+        font-size: 1.5rem;  
+
+    }
     header {
         padding-left: .5rem;
         padding-right: .5rem;
@@ -697,11 +708,12 @@ footer {
         display: flex;
         justify-content: space-between;
         align-items: center;
+        /* border-radius: 10px; */
     }
 
     nav ul {
         position: absolute;
-        top: 6rem;
+        top: 6.5rem;
         left: 0;
         z-index: 1000;
         padding: .5rem;
@@ -751,6 +763,10 @@ footer {
         padding: 0rem 1rem;
     }
 
+    .featured_products {
+        padding: 1rem 0rem;
+    }
+
 
     .product_cards {
         padding: 0rem 1rem;
@@ -758,6 +774,7 @@ footer {
         align-items: center;
         margin-left: 0rem;
         margin-right: 0rem;
+        margin: 0 0;
     }
 
     .products .product_cards .card {
@@ -774,5 +791,12 @@ footer {
     .news .news_card {
         width: 100%;
         margin: 1rem 0rem;
+    }
+    
+    
+    .footer{
+        margin-left: 0rem;
+        margin-right: 0rem;
+        justify-items: left;
     }
 }
