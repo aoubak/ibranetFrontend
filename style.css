@@ -231,15 +231,16 @@ nav ul li a:hover {
         gap: 1rem;
         justify-content: center;
     }
-    .products .product_cards .card{
-        margin: 0rem  ;
-            width: calc(35% - 1rem);
+
+    .products .product_cards .card {
+        margin: 0rem;
+        width: calc(35% - 1rem);
     }
 
-    .latest_fasion_news .news{
+    .latest_fasion_news .news {
         margin: 0;
     }
-    
+
 }
 
 
@@ -277,8 +278,9 @@ nav ul li a:hover {
     height: auto;
     display: block;
     border-radius: 10px 10px 0 0;
-  
+
 }
+
 .grid-container .card img:hover {
     cursor: pointer;
     transform: scale(1.05);
@@ -300,7 +302,7 @@ nav ul li a:hover {
 
 /* Tablet iyo wixii ka weyn */
 @media (min-width: 600px) {
-   
+
 
     .grid-container {
         grid-template-columns: repeat(2, 1fr);
@@ -503,6 +505,7 @@ nav ul li a:hover {
 .product_cards .card .stars .rating {
     color: var(--warning-color);
 }
+
 /* Developer section */
 .developers {
     display: grid;
@@ -511,49 +514,59 @@ nav ul li a:hover {
     margin-left: 5rem;
     margin-right: 5rem;
 }
-.images{
+
+.images {
     /* width: 300px; */
 
 }
-.images img{
+
+.images img {
     width: 100%;
     border-radius: 50%;
 }
-.developer{
+
+.developer {
     background-color: var(--secondary-color);
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     text-align: center;
 }
+
 .developer-header h3 {
     margin: 10px 0;
     font-size: 1.5rem;
 
 }
-.skills{
-    color: var(--seccess-color)!important;
+
+.skills {
+    color: var(--seccess-color) !important;
     font-weight: 600;
     text-align: center !important;
 }
-.work-section{
+
+.work-section {
     color: var(--seccess-color);
     font-weight: 500;
 }
+
 .developer-header p {
     font-size: 1rem;
     color: var(--low-gray);
     margin-top: 5px;
     text-align: justify;
 }
+
 .social-links {
     margin-top: 10px;
     font-size: 24px;
 }
+
 .social-links a {
     color: var(--text-color);
     text-decoration: none;
 }
+
 .social-links a:hover {
     color: var(--primary-color);
     transition: color 0.3s ease;
@@ -571,7 +584,7 @@ nav ul li a:hover {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-   
+
 }
 
 .news .news_card {
@@ -593,6 +606,7 @@ nav ul li a:hover {
     border-radius: 10px;
     object-fit: cover;
 }
+
 .newsletter {
     text-align: center;
     padding: 40px 20px;
@@ -727,15 +741,17 @@ footer {
 @media (max-width: 600px) {
     .newsletter {
         text-align: left;
-    }   
+    }
+
     .subscribe-form {
         display: flex;
         gap: 10px;
     }
 
-    .subscribe-form input{
+    .subscribe-form input {
         border-radius: 5px;
     }
+
     .subscribe-form button {
         /* margin-bottom: 10px; */
         border-radius: 5px;
@@ -751,19 +767,21 @@ footer {
 
 /* mobile screens */
 @media (max-width: 475px) {
-    section{
+    section {
         margin: 2rem 0rem;
     }
+
     .page_header h1 {
-        font-size: 1.5rem;  
+        font-size: 1.5rem;
 
     }
+
     header {
         padding-left: .5rem;
         padding-right: .5rem;
     }
 
- 
+
 
     nav {
         position: relative;
@@ -819,7 +837,7 @@ footer {
         display: block;
     }
 
-    .featured_products .grid-container{
+    .featured_products .grid-container {
         margin-left: 0rem;
         margin-right: 0rem;
         padding: 0rem 1rem;
@@ -854,14 +872,23 @@ footer {
         width: 100%;
         margin: 1rem 0rem;
     }
-    .footer-section{
+
+    .footer-section {
         text-align: center;
         margin: 0rem;
     }
+
     .footer .footer-logo {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
     
+    .developers{
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+
+
+
 }
