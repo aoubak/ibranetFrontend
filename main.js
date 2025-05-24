@@ -18,16 +18,20 @@ async function fetchProducts() {
         const { products } = await response.json();
         console.log(products);
 
+        
 
         products.slice(0, 9).forEach(product => {
+            // console.log(Math.round(product.rating + "qqq")); 
             const product_card = document.createElement("div");
             product_card.classList.add("card");
+
+            
             product_card.innerHTML = `
                        <span>
-                         ${product.availabilityStatus == 'In Stock'
-                    ? `<span class="status in-stock"> In Stock </span> `
-                    : `<span class="status out-stock"> Out Stock </span>`
-                } 
+                         ${ product.availabilityStatus == 'In Stock'
+                            ? `<span class="status in-stock"> In Stock </span>`
+                            : `<span class="status out-stock"> Out Stock </span>`
+                          } 
                           </span>
                         <img src="${product.thumbnail}" alt="Product 1">
                         <h3>${product.title}</h3>
@@ -44,14 +48,10 @@ async function fetchProducts() {
                                 </span>
                                 <span>
                                     ${"☆".repeat(Math.round(5 - product.rating))}
-                                    
                                 </span>
                             </div>
-
                         </div>
-
-                    
-            `;
+                        `;
             product_cards.appendChild(product_card);
         });
 
@@ -68,12 +68,12 @@ async function fetchProducts() {
             news_section.appendChild(news_card);
         });
 
-
         const featured_products = document.querySelector(".featured_products");
 
         // Grid container
         const grid_container = document.querySelector(".grid-container");
 
+        // featred products
         // First two products → BIG cards
         products.slice(0, 2).forEach(product => {
             grid_container.innerHTML += `
@@ -95,9 +95,6 @@ async function fetchProducts() {
         });
 
       featured_products.appendChild(grid_container);
-
-
-
 
     } catch (error) {
         console.error("Error fetching products:", error);
