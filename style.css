@@ -508,10 +508,11 @@ nav ul li a:hover {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
     gap: 30px;
-    padding: 40px 20px;
+    margin-left: 5rem;
+    margin-right: 5rem;
 }
 .images{
-    width: 300px;
+    /* width: 300px; */
 
 }
 .images img{
@@ -641,9 +642,11 @@ footer {
 
 }
 
-.footer .footer-logo {
-    text-align: left;
-}
+/* .footer .footer-logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+} */
 
 .footer .footer-logo .social-icons a i {
     /* margin-right: 10px; */
@@ -855,6 +858,10 @@ footer {
         text-align: center;
         margin: 0rem;
     }
-    
+    .footer .footer-logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
     
 }
